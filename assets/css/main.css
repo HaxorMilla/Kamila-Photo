@@ -3526,3 +3526,23 @@ input, select, textarea {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* dvě fotky vedle sebe */
+    gap: 1.5rem;
+    margin-top: 2em;
+}
+
+.gallery img {
+    width: 100%; /* každá fotka zabere 100 % své buňky */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
