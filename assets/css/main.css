@@ -3545,3 +3545,7 @@ input, select, textarea {
 .gallery img:hover {
     transform: scale(1.02);
 }
+
+ul.actions.special li::after {
+    display: none !important;
+}
