@@ -3529,13 +3529,15 @@ input, select, textarea {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* dvě fotky vedle sebe */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* přizpůsobí se šířce */
     gap: 1.5rem;
     margin-top: 2em;
+    width: 100%;
+    max-width: 100%;
 }
 
 .gallery img {
-    width: 100%; /* každá fotka zabere 100 % své buňky */
+    width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -3545,4 +3547,5 @@ input, select, textarea {
 .gallery img:hover {
     transform: scale(1.02);
 }
+
 
