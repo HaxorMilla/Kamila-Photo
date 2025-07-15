@@ -3549,3 +3549,14 @@ input, select, textarea {
 ul.actions.special li::after {
     display: none !important;
 }
+
+#header .image.main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#header .image.main img {
+    margin: 0 auto;
+    display: block;
+}
