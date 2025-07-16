@@ -3537,3 +3537,10 @@ ul.actions.special li::after {
     margin: 0 auto;
     display: block;
 }
+
+/* Černé pozadí pro sekci s fotkami */
+.main.style2,
+.gallery {
+  background-color: #000 !important;
+  background-image: none !important;
+}
