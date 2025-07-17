@@ -3565,3 +3565,100 @@ ul.actions.special li::after {
     justify-content: center;
     text-align: center;
 }
+/* Pozadí pro sekce s luxusními přechody */
+
+#header {
+  background: linear-gradient(to bottom, rgba(85, 45, 70, 0.85), #d8cfc4);
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+#one {
+  background: linear-gradient(to bottom, #d8cfc4, #a99fae);
+  color: #3a2f3a;
+}
+
+#two {
+  background: linear-gradient(to bottom, #a99fae, #5c5160);
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+#footer {
+  background: linear-gradient(to top, #5c5160, #d8cfc4);
+  color: #3a2f3a;
+  text-shadow: none;
+}
+
+/* Zaoblení a odsazení */
+#one, #two {
+  border-radius: 50px 50px 0 0;
+  margin-top: -3em;
+  padding-top: 5em;
+}
+
+/* Vlnkový přechod pod sekcemi */
+.wave-transition {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: -1px;
+}
+
+/* Zaoblení dole pro sekce Fotografie a Kontakty */
+.gallery {
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+#footer {
+  border-radius: 50px 50px 0 0;
+  margin-top: -3em;
+  padding-top: 5em;
+}
+}
+
+.wave-transition svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.wave-transition-bottom {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.wave-transition-bottom svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+<style>
+  /* ...tvůj původní styl... */
+
+  #gallery {
+    border-radius: 50px 50px 0 0;
+    margin-top: -3em;
+    padding-top: 5em;
+    background-color: #111;
+    position: relative;
+  }
+
+  #Footer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-radius: 0 0 50px 50px;
+    z-index: 1;
+  }
+</style>
