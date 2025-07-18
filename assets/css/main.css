@@ -2953,7 +2953,7 @@ input, select, textarea {
 		#header button,
 		#header .button {
 			box-shadow: inset 0 0 0 1px #ffffff;
-			color: #123524 !important;
+			color: #fdfffe !important;
 		}
 
 			#header input[type="submit"]:hover,
@@ -3544,13 +3544,19 @@ ul.actions.special li::after {
 }
 
 .button {
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: black !important;
-    border: 1px solid white;
-    padding: 0.6em 1.8em;
-    transition: background-color 0.3s ease;
+    background-color: transparent !important;
+    color: #fdfffe !important;
+    text-decoration: underline !important;
+	text-underline-offset: 4px; /* přidáno – uprav hodnotu podle potřeby */
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.8em 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 .button:hover {
     background-color: #fff;
@@ -3579,7 +3585,7 @@ ul.actions.special li::after {
 }
 
 .dark-background .button {
-  background: #fff;
+  background: #040303;
   color: #000;
   box-shadow: none;
 }
