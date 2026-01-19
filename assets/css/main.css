@@ -3594,3 +3594,37 @@ ul.actions.special li::after {
   background: #ddd;
   color: #000;
 }
+
+/* ===== CENÍK – KARTY ===== */
+.price-card {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.price-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.price-card div {
+  margin-bottom: 12px;
+}
+
+.price {
+  margin-top: 25px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* jemné zvýraznění při najetí */
+.price-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
